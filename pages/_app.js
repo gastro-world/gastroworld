@@ -3,7 +3,7 @@ import { UserProvider } from "@auth0/nextjs-auth0";
 import Layout from "../components/Layout";
 import Head from "next/head";
 
-function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -16,6 +16,6 @@ function App({ Component, pageProps }) {
       </UserProvider>
     </>
   );
-}
+};
 
 export default App;
