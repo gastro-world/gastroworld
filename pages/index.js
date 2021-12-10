@@ -1,5 +1,7 @@
+import Hero from "../components/Hero";
+
 const Index = () => {
-  return <h1 className={"text-2xl"}>Gastro-world</h1>;
+  return <Hero />;
 };
 
 export default Index;

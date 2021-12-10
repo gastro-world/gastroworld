@@ -6,7 +6,7 @@ const Footer = () => {
             GastroWorld<span className="text-yellow-400">.</span>
           </p>
           <p className="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">
-            © 2021 GastroWorld - The worlds most delicious map
+            © 2021 GastroWorld - The world&apos;s most delicious map
           </p>
         </div>
       </section>
