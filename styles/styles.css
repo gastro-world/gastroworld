@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.uploadcare--widget__button_type_open {
+  background-color: #157cfc;
+}
+
+.uploadcare--widget__button_type_open:hover {
+  background-color: #1556fc;
+}
+
+.uploadcare--widget__button {
+  font-size: 1.2rem;
+  width: 66vw;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
