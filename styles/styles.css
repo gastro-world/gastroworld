@@ -17,3 +17,19 @@
   padding-bottom: 0.75rem;
   margin-bottom: 0.75rem;
 }
+
+.container {
+  @apply m-6;
+}
+
+.container h1 {
+  @apply text-4xl text-center font-extrabold m-2;
+}
+
+.container h2 {
+  @apply text-3xl text-center font-bold m-2;
+}
+
+.container ol {
+  @apply text-xl m-2 list-decimal;
+}

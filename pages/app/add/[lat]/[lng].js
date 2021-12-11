@@ -14,7 +14,7 @@ const Add = () => {
   const router = useRouter();
   const { lat, lng } = router.query;
   const handleEditorChange = ({ html, text }) => {
-    setValue(text);
+    setValue(html);
   };
   const {
     register,
