@@ -12,7 +12,7 @@
 
 .uploadcare--widget__button {
   font-size: 1.2rem;
-  width: 66vw;
+  width: 40vw;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   margin-bottom: 0.75rem;
@@ -23,13 +23,29 @@
 }
 
 .container h1 {
-  @apply text-4xl text-center font-extrabold m-2;
+  @apply text-4xl font-extrabold m-2;
 }
 
 .container h2 {
-  @apply text-3xl text-center font-bold m-2;
+  @apply text-3xl font-bold m-2;
 }
 
 .container ol {
   @apply text-xl m-2 list-decimal;
+}
+
+.container-2 {
+  @apply m-2;
+}
+
+.container-2 h1 {
+  @apply text-2xl font-bold m-2;
+}
+
+.container-2 h2 {
+  @apply text-xl font-bold m-2;
+}
+
+.container-2 ol {
+  @apply text-base m-2 list-decimal;
 }
