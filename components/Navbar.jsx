@@ -5,6 +5,13 @@ const Navbar = () => {
   const { user } = useUser();
   const router = useRouter();
   const logout = router.pathname.includes("app") ? true : false;
+  if (router.pathname.includes("app")) {
+    if (router.pathname.includes("add") || router.pathname.includes("food")) {
+      console.log("lol")
+    } else {
+      return null
+    }
+  }
   return (
     <header className="relative w-full px-8 text-gray-700 bg-white body-font">
       <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">

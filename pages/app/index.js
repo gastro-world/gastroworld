@@ -2,7 +2,7 @@ import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import toast, { Toaster } from "react-hot-toast";
 
 const mapStyles = {
   width: "100%",
@@ -17,6 +17,16 @@ const HomeApp = ({ google, markers }) => {
   useEffect(() => {
     if (document.monetization) {
       setIsMonetized(true);
+      toast.success(
+        "Have activated web monetization using Coil, you can click anywhere on the map to add a food.",
+        {
+          duration: 6000,
+        }
+      );
+    } else {
+      toast.error("Active Coil for add places", {
+        duration: 6000,
+      });
     }
   }, [isMonetized]);
   const onMarkerClick = (props, marker, e) => {
@@ -104,6 +114,7 @@ const HomeApp = ({ google, markers }) => {
           />
         </InfoWindow>
       </Map>
+      <Toaster />
     </div>
   );
 };
