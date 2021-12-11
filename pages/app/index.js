@@ -7,3 +7,4 @@ const HomeApp = () => {
 export const getServerSideProps = withPageAuthRequired();
 
 export default HomeApp;
+

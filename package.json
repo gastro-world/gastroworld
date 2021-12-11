@@ -5,13 +5,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "migrate:postgres": "prisma migrate dev --name postgres-init"
+    "lint": "next lint"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.6.1",
+    "deta": "^1.0.1",
+    "google-maps-react": "^2.0.6",
     "next": "12.0.7",
-    "prisma": "^3.6.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sharp": "^0.29.3"
