@@ -14,15 +14,10 @@ const HomeApp = ({ google, markers }) => {
   const [selectedPlace, setSelectedPlace] = useState({});
   const [addPlace, setAddPlace] = useState({});
   const [isMonetized, setIsMonetized] = useState(false);
+  const [counter, setCounter] = useState(0)
   useEffect(() => {
     if (document.monetization) {
       setIsMonetized(true);
-      toast.success(
-        "Have activated web monetization using Coil, you can click anywhere on the map to add a food.",
-        {
-          duration: 6000,
-        }
-      );
     } else {
       toast.error("Active Coil for add places", {
         duration: 6000,
@@ -72,7 +67,15 @@ const HomeApp = ({ google, markers }) => {
       );
     }
   };
-
+  if (isMonetized && counter < 1) {
+    setCounter(counter + 1)
+    toast.success(
+      "You have enabled web monetization with Coil. Now you can click anywhere on the map to add new food :)",
+      {
+        duration: 6000,
+      }
+    );
+  }
   return (
     <div className="">
       <Map
@@ -131,6 +134,17 @@ export const getServerSideProps = async () => {
   };
 };
 
+const Loader = () => {
+  return (
+    <div className="flex h-screen">
+      <div className="m-auto">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900"></div>
+      </div>
+    </div>
+  );
+};
+
 export default GoogleApiWrapper({
   apiKey: "AIzaSyAMU8Eys5iJyxvpJxQ17Vp-51U8rJHs-ik",
+  LoadingContainer: Loader,
 })(HomeApp);

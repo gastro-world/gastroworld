@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0";
-import Image from "next/image";
 
 const Hero = () => {
   const { user } = useUser();
@@ -39,7 +38,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="container items-center max-w-4xl px-5 mx-auto mt-16 text-center">
-        <Image
+        <img
           src="https://www.nicepng.com/png/full/175-1759039_crab-food-illustration-chalk-food-chalk-art-png.png"
           alt="banner"
           width="896px"

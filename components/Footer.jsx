@@ -10,8 +10,8 @@ const Footer = () => {
     }
   }
   return (
-    <section className="text-gray-700 bg-white body-font">
-      <div className="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
+    <section className="flex items-center justify-center">
+      <div className="flex flex-row items-center px-8 py-8 mx-auto">
         <p className="text-xl font-black leading-none text-gray-900 select-none logo">
           GastroWorld<span className="text-yellow-400">.</span>
         </p>

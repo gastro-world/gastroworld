@@ -125,7 +125,7 @@ const Add = () => {
           )}
           <div className="block">
             <div
-              className="container-2"
+              className="container-recipe-2"
               dangerouslySetInnerHTML={{ __html: preview.description }}
             ></div>
           </div>

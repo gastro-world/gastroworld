@@ -13,14 +13,13 @@ const Navbar = () => {
     }
   }
   return (
-    <header className="relative w-full px-8 text-gray-700 bg-white body-font">
-      <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+    <header>
+      <div className="flex flex-row flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
         <Link href="/">
           <a className="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none">
             GastroWorld
           </a>
         </Link>
-        <div className="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
           <span className="inline-flex rounded-md shadow-sm">
             {!logout && (
               <Link href={user ? "/app" : "/api/auth/login"}>
@@ -38,7 +37,6 @@ const Navbar = () => {
             )}
           </span>
         </div>
-      </div>
     </header>
   );
 };

@@ -18,34 +18,34 @@
   margin-bottom: 0.75rem;
 }
 
-.container {
+.container-recipe {
   @apply m-6;
 }
 
-.container h1 {
+.container-recipe h1 {
   @apply text-4xl font-extrabold m-2;
 }
 
-.container h2 {
+.container-recipe h2 {
   @apply text-3xl font-bold m-2;
 }
 
-.container ol {
+.container-recipe ol {
   @apply text-xl m-2 list-decimal;
 }
 
-.container-2 {
+.container-recipe-2 {
   @apply m-2;
 }
 
-.container-2 h1 {
+.container-recipe-2 h1 {
   @apply text-2xl font-bold m-2;
 }
 
-.container-2 h2 {
+.container-recipe-2 h2 {
   @apply text-xl font-bold m-2;
 }
 
-.container-2 ol {
+.container-recipe-2 ol {
   @apply text-base m-2 list-decimal;
 }
