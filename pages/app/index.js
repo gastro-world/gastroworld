@@ -13,17 +13,8 @@ const HomeApp = ({ google, markers }) => {
   const [showInfo, setShowInfo] = useState(false);
   const [selectedPlace, setSelectedPlace] = useState({});
   const [addPlace, setAddPlace] = useState({});
-  const [isMonetized, setIsMonetized] = useState(false);
+  const [isMonetized, setIsMonetized] = useState(true);
   const [counter, setCounter] = useState(0)
-  useEffect(() => {
-    if (document.monetization) {
-      setIsMonetized(true);
-    } else {
-      toast.error("Active Coil for add places", {
-        duration: 6000,
-      });
-    }
-  }, [isMonetized]);
   const onMarkerClick = (props, marker, e) => {
     setShowInfo(true);
     setSelectedPlace(props);
@@ -70,7 +61,7 @@ const HomeApp = ({ google, markers }) => {
   if (isMonetized && counter < 1) {
     setCounter(counter + 1)
     toast.success(
-      "You have enabled web monetization with Coil. Now you can click anywhere on the map to add new food :)",
+      "You can click anywhere on the map to add new food :)",
       {
         duration: 6000,
       }
