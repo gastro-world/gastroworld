@@ -145,6 +145,6 @@ const Loader = () => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyAMU8Eys5iJyxvpJxQ17Vp-51U8rJHs-ik",
+  apiKey: "AIzaSyDX5b2eROUXhaHcVDNiX4yAnipp3d7898Q",
   LoadingContainer: Loader,
 })(HomeApp);
